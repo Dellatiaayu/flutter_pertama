@@ -1,14 +1,4 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-
-import 'package:flutter_pertama/main.dart';
+import 'dart:async';
 
 void main() {
   // Tipe data & variable
@@ -105,6 +95,16 @@ void main() {
   var n = hitungNilai2(mapel1: 50, mapel2: 2);
   print(n);
   var o = hitungNilai3(79, 100);
+
+  //final keyboard => inutable/tidak bisa di rubah
+  //const final
+  //const
+  //const String mahasiswa = "beben";
+  final String mahasiswafk;
+
+  mahasiswafk = "beben";
+
+  print(mahasiswafk);
 }
 
 //function
