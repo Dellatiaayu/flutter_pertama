@@ -79,4 +79,62 @@ void main() {
   print(a < b);
   print(a >= b);
   print(a <= b);
+
+  //conditional
+  var nilai;
+  nilai = 80;
+
+  if (nilai >= 80) {
+    print("A");
+  } else if (nilai <= 80 && nilai >= 50) {
+    print("B");
+  } else {
+    print("Tidak Lulus");
+  }
+
+  print("------------");
+  nilai >= 80 ? print("A") : print("Tidak A");
+
+  //function
+  print("Function");
+
+  hitungNilai();
+  hitungNilai1(75, 90);
+  var p = hitungNilai1(2, 50);
+  print(p);
+  var n = hitungNilai2(mapel1: 50, mapel2: 2);
+  print(n);
+  var o = hitungNilai3(79, 100);
+}
+
+//function
+hitungNilai() {
+  print("hitung nilai");
+}
+
+//porsitional argument
+hitungNilai1(mapel1, mapel2, [mapel3]) {
+  var nilaiakhir;
+  if (mapel3 != null) {
+    nilaiakhir = mapel1 / mapel2 + mapel3;
+  } else {
+    nilaiakhir = mapel1 / mapel2;
+  }
+  return nilaiakhir;
+}
+
+//nama argumen
+hitungNilai2({mapel1, mapel2}) {
+  var nilaiakhir;
+  if (mapel2 != null) {
+    nilaiakhir = mapel1 / mapel2;
+  } else {
+    nilaiakhir = mapel1;
+  }
+  return nilaiakhir;
+}
+
+void hitungNilai3(mapel1, mapel2) {
+  var nilaiakhir = mapel1 + mapel2;
+  print(nilaiakhir);
 }
